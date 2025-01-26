@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratitude Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logoContainer">
+            <img src="C:/Users/HP/OneDrive/Desktop/GratitudeJournal/assets/images/logo1.jpg" alt="Logo" id="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#entries">Entries</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#insights">Insights</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <div id="slideshow">
+                <img src="C:/Users/HP/OneDrive/Desktop/GratitudeJournal/assets/images/dayy2.jpg" alt="Slide 1" class="slide">
+                <img src="C:/Users/HP/OneDrive/Desktop/GratitudeJournal/assets/images/dayy3.jpg" alt="Slide 2" class="slide">
+                <img src="C:/Users/HP/OneDrive/Desktop/GratitudeJournal/assets/images/dayy1.jpg" alt="Slide 3" class="slide">
+                <img src="C:/Users/HP/OneDrive/Desktop/GratitudeJournal/assets/images/dayy.jpg" alt="Slide 1" class="slide">
+            </div>
+            <div id="welcomeSection">
+                
+                <div id="welcomeMessage">Welcome to Your Gratitude Journal</div>
+                <p id="welcomeDescription">
+                    This is your personal space to reflect on the positive moments in life. 
+                    Write down what you're grateful for, track your progress, and celebrate your journey toward mindfulness and happiness.
+                </p>
+            </div>
+            
+            
+            
+        </section>
+        <section id="entries">
+            <h2>Daily Gratitude Entry</h2>
+            <form>
+                <label for="entry">What are you grateful for today?</label>
+                <textarea id="entry" placeholder="Write your gratitude entry here..."></textarea>
+                <label for="category">Category</label>
+                <select id="category" >
+                    <option value="family">Family</option>
+                    <option value="work">Work</option>
+                    <option value="health">Health</option>
+                    <option value="Food">Food</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button type="submit">Add</button>
+                <button type="reset">Cancel</button>
+            </form>
+        </section>
+        <section id="savedEntries">
+            <h2>Your Gratitude Entries</h2>
+            <ul id="entriesList"></ul>
+        </section>
+        
+        <section id="calendar">
+            <h2>Calendar View</h2>
+            <div id="calendarHeader">
+                <button id="prevMonth">←</button>
+                <span id="currentMonthYear"></span>
+                <button id="nextMonth">→</button>
+            </div>
+            <div id="dayNames">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div id="calendarContainer"></div>
+            <div id="selectedDateEntries" style="display: none;">
+                <h3>Entries for <span id="selectedDate"></span></h3>
+                <ul id="entriesForDateList"></ul>
+                <button id="closeSelectedDateEntries">Close</button>
+            </div>
+            
+        </section>
+        <section id="insights">
+            <h2>Insights</h2>
+            <div id="categoryAnalysis" class="form-select">
+                <h3>Most Common Categories</h3>
+                <ul id="categoryList"  >
+                    <img src="C:/Users/HP/OneDrive/Desktop/GratitudeJournal/assets/images/dayy2.jpg">
+            
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Made with ❤️ for your mental health</p>
+        <p>&copy; 2025 Gratitude Journal</p>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>

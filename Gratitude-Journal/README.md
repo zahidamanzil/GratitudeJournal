@@ -13,8 +13,3 @@ This web application allows users to record their daily gratitude entries, categ
 - HTML
 - CSS
 - JavaScript
-
-
-
-click here to view: 
-https://github.com/zahidamanzil/Gratitude-Journal.git 
